@@ -1,5 +1,6 @@
 from ubuntu:trusty
 ENV saltversion=2015.8.8
+RUN echo "test"
 RUN apt-get -y install wget
 RUN wget -O - https://repo.saltstack.com/apt/ubuntu/14.04/amd64/archive/${saltversion}/SALTSTACK-GPG-KEY.pub | sudo apt-key add -
 RUN echo deb http://repo.saltstack.com/apt/ubuntu/14.04/amd64/archive/${saltversion} trusty main >> /etc/apt/sources.list
